@@ -1,0 +1,633 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ADS VPMS
+VAL_TABLE_ Vtsig_VIN_Value 65535 "Description for the value '0x4'" 259 "Description for the value '0x2'" 258 " valid" 257 "NO" 0 "Description for the value '0x3'" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ ACC_TARGET_ACCELERATION : 0|11@0+ (0.005,-7.22) [-7.22|3.015] "" Vector__XXX
+
+BO_ 611 ACC_COMMAND_FOR_ESP1: 8 Vector__XXX
+ SG_ CHECKSUM_ACC1 : 63|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACC_MODE_ESP : 55|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ALIVECONTER_ACC1 : 51|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MIN_TARGET_ACCELERATION : 47|7@0+ (0.1,-12.7) [0|0] "" Vector__XXX
+ SG_ RUQUEST_DECELERATE_TO_STOP : 40|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ MAX_TARGET_ACCELERATION : 39|7@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ DRIVE_OFF : 32|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ LOWER_VALUE_COMFORT_BAND : 31|7@0+ (0.025,0) [0|0] "" Vector__XXX
+ SG_ ACC_MINIMUM_BRAKING : 24|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ UPPER_VALUE_COMFORT_BAND : 23|7@0+ (0.025,0) [0|0] "" Vector__XXX
+ SG_ ACC_TARGET_ACCELERATION : 7|11@0+ (0.005,-7.22) [0|0] "" Vector__XXX
+ SG_ BRAKE_PREFERRED : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SHUTDOWN_MODE : 12|2@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACC_WORK_MODE : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 915 VIN_Resp3: 8 Vector__XXX
+ SG_ VIN16 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 914 VIN_Resp2: 8 Vector__XXX
+ SG_ VIN15 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN14 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN13 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN12 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN11 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN10 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN09 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN08 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 913 VIN_Resp1: 8 Vector__XXX
+ SG_ VIN07 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN06 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN05 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN04 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN03 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN02 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN00 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ VIN01 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 912 ADS_Req_VIN: 8 ADS
+ SG_ Req_VIN_Signal : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 273 ADS1: 8 ADS
+ SG_ ADS_DecToStop : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ADS_Mode : 7|5@0+ (1,0) [0|31] ""  VPMS
+ SG_ ADS_TarAcce : 15|8@0+ (0.05,-7) [-7|5.75] "m/s2"  VPMS
+ SG_ ADS_Driveoff_Req : 1|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ ADS_AEB_TarAcce : 39|16@0+ (0.000488,-16) [-16|16] "m/s2"  VPMS
+ SG_ ADS_AEB_TgtDecel_Req : 31|1@0+ (1,0) [0|1] ""  VPMS
+
+BO_ 275 ADS_EPS: 8 ADS
+ SG_ ADS_EPSMode : 7|2@0+ (1,0) [0|3] ""  VPMS
+ SG_ ADS_ReqEPSTargetAngle : 15|14@0+ (0.1,-800) [-800|838.3] "deg"  VPMS
+
+BO_ 277 ADS_SHIFTER: 8 ADS
+ SG_ ADS_ShiftMode : 31|4@0+ (1,0) [0|1] ""  VPMS
+ SG_ ADS_TargetGear : 38|2@0+ (1,0) [0|3] ""  VPMS
+
+BO_ 910 ADS3: 8 ADS
+ SG_ ADS_BCM_WorkSts : 6|2@0+ (1,0) [0|3] ""  VPMS
+ SG_ ADS_BCMWorkStsValid : 7|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ ADS_ReqControlBCM : 8|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ HighBeamtON : 11|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ DippedBeamON : 12|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ TurnlLightON : 17|2@0+ (1,0) [0|3] ""  VPMS
+ SG_ EmergencyLightON : 45|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ FFogLampON : 46|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ RFogLampON : 47|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ BrakeLight : 48|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ HornON : 49|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ Fwindshieldwiper : 50|1@0+ (1,0) [0|1] ""  VPMS
+ SG_ Rwindshieldwiper : 60|1@0+ (1,0) [0|1] ""  VPMS
+
+BO_ 579 FBS1: 8 VPMS
+ SG_ LongitudeAcce : 7|16@0+ (0.00098,-21.592) [-21.592|21.592] "m/s^2"  ADS
+ SG_ LateralAcce : 23|16@0+ (0.00098,-21.592) [-21.592|21.592] "m/s^2"  ADS
+ SG_ VehDynYawRate : 39|16@0+ (0.00024,-2.093) [-2.093|2.093] "rad/s"  ADS
+ SG_ FLWheelSpd : 55|13@0+ (0.05625,0) [0|299.98125] "Km/h"  ADS
+ SG_ FRWheelDirection : 57|2@0+ (1,0) [0|3] ""  ADS
+
+BO_ 576 FBS2: 8 VPMS
+ SG_ FLWheelDirection : 57|2@0+ (1,0) [0|3] ""  ADS
+ SG_ FRWheelSpd : 7|13@0+ (0.05625,0) [0|299.98125] "Km/h"  ADS
+ SG_ RLWheelDriveDirection : 9|2@0+ (1,0) [0|3] ""  ADS
+ SG_ RLWheelSpd : 23|13@0+ (0.05625,0) [0|299.98125] "Km/h"  ADS
+ SG_ RRWheelDirection : 25|2@0+ (1,0) [0|3] ""  ADS
+ SG_ RRWheelSpd : 39|13@0+ (0.05625,0) [0|299.98125] "Km/h"  ADS
+ SG_ VehicleSpd : 55|13@0+ (0.05625,0) [0|299.98125] "Km/h"  ADS
+
+BO_ 567 FBS3: 8 VPMS
+ SG_ EngSpd : 7|16@0+ (0.125,0) [0|8198.875] "rpm"  ADS
+ SG_ AccPedalPos : 23|8@0+ (0.3937,0) [0|100.3935] "%"  ADS
+ SG_ EPBSwtichPosition : 31|2@0+ (1,0) [0|3] ""  ADS
+ SG_ CurrentGear : 39|2@0+ (1,0) [0|3] ""  ADS
+ SG_ EPS_StreeingMode : 34|3@0+ (1,0) [0|7] ""  ADS
+ SG_ EPSDrvInputTrqValue : 47|8@0+ (0.1794,-22.78) [-22.78|22.96] "Nm"  ADS
+ SG_ EPSConsumedCurrValue : 55|8@0+ (0.5,0) [-127|127] "A"  ADS
+ SG_ EPSCurrMod : 61|3@0+ (1,0) [0|7] ""  ADS
+
+BO_ 565 FBS4: 8 VPMS
+ SG_ SteerWheelAngle : 15|15@0+ (0.1,0) [0|780] "��"  ADS
+ SG_ SteerWheelSpd : 39|15@0+ (0.1,0) [0|1016] "��/s"  ADS
+
+BO_ 784 STATUS: 8 VPMS
+ SG_ LongitudeAccValid : 15|1@0+ (1,0) [0|1] ""  ADS
+ SG_ LateralAcceValid : 7|1@0+ (1,0) [0|1] ""  ADS
+ SG_ VehDynYawRateValid : 6|1@0+ (1,0) [0|1] ""  ADS
+ SG_ FLWheelSpdValid : 5|1@0+ (1,0) [0|1] ""  ADS
+ SG_ FRWheelSpdValid : 53|1@0+ (1,0) [0|1] ""  ADS
+ SG_ RLWheelSpdValid : 3|1@0+ (1,0) [0|1] ""  ADS
+ SG_ RRWheelSpdValid : 2|1@0+ (1,0) [0|1] ""  ADS
+ SG_ VehicleSpdValid : 0|1@0+ (1,0) [0|1] ""  ADS
+ SG_ LongitudeDrivingMode : 14|2@0+ (1,0) [0|3] ""  ADS
+ SG_ EngSpdValid : 12|2@0+ (1,0) [0|2] ""  ADS
+ SG_ AccePedalOverride : 19|1@0+ (1,0) [0|1] ""  ADS
+ SG_ BrakePedalStatus : 9|2@0+ (1,0) [0|3] ""  ADS
+ SG_ ESPBrakeLightSts : 29|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPBSwtPositionValid : 20|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPBSts : 18|2@0+ (1,0) [0|3] ""  ADS
+ SG_ CurrentGearValid : 25|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPSTrqSnsrSts : 31|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPS_InterferDetdValid : 38|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPSHandsDetnSts : 27|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPS_HandsDetnStsValid : 34|1@0+ (1,0) [0|1] ""  ADS
+ SG_ SteerWheelAngleSign : 32|1@0+ (1,0) [0|1] ""  ADS
+ SG_ SteerWheelSpdSign : 40|1@0+ (1,0) [0|1] ""  ADS
+ SG_ DriverDoorSts : 47|1@0+ (1,0) [0|1] ""  ADS
+ SG_ RLDoorSts : 54|1@0+ (1,0) [0|1] ""  ADS
+ SG_ PassengerDoorSts : 45|1@0+ (1,0) [0|1] ""  ADS
+ SG_ RRDoorSts : 44|1@0+ (1,0) [0|1] ""  ADS
+ SG_ FrontFogLmpSts : 43|2@0+ (1,0) [0|3] ""  ADS
+ SG_ RearFogLmpSts : 51|1@0+ (1,0) [0|1] ""  ADS
+ SG_ LowBeamSts : 49|1@0+ (1,0) [0|1] ""  ADS
+ SG_ HighBeamSts : 63|1@0+ (1,0) [0|1] ""  ADS
+ SG_ LeftTurnLampSts : 62|1@0+ (1,0) [0|1] ""  ADS
+ SG_ RightTurnLampSts : 60|1@0+ (1,0) [0|1] ""  ADS
+ SG_ BCM_AvailSts : 58|2@0+ (1,0) [0|3] ""  ADS
+ SG_ BrakeLmpSts : 56|1@0+ (1,0) [0|1] ""  ADS
+
+BO_ 577 FAIL: 8 VPMS
+ SG_ EngFail : 7|1@0+ (1,0) [0|1] ""  ADS
+ SG_ ESPFail : 14|1@0+ (1,0) [0|1] ""  ADS
+ SG_ EPBFail : 35|2@0+ (1,0) [0|3] ""  ADS
+ SG_ ShiftFail : 31|4@0+ (1,0) [0|15] ""  ADS
+ SG_ EPSFail : 21|1@0+ (1,0) [0|1] ""  ADS
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 273 ADS_DecToStop "ADS request ESP/VLC to decelerate untill standstill.";
+CM_ SG_ 273 ADS_Mode "The status of the ADS control unit.The ADS mode should be contained in every message sent by ADS";
+CM_ SG_ 273 ADS_TarAcce "ADS target acceleration for transmission";
+CM_ SG_ 273 ADS_Driveoff_Req "ACC request ESP drive off";
+CM_ SG_ 273 ADS_AEB_TarAcce "target deceleration value from AEB";
+CM_ SG_ 273 ADS_AEB_TgtDecel_Req "Request of the AEB deceleration control.";
+CM_ SG_ 275 ADS_EPSMode "EPS Mode";
+CM_ SG_ 275 ADS_ReqEPSTargetAngle "Steering Wheel Target Angle";
+CM_ SG_ 277 ADS_ShiftMode "ADS Shift Mode";
+CM_ SG_ 277 ADS_TargetGear "ADS Target Gear";
+CM_ SG_ 910 ADS_BCM_WorkSts "The work status of ADS control unit.This signal should be contained in every message sent by ADS.";
+CM_ SG_ 910 ADS_BCMWorkStsValid "This Signal reflect the ADS_WorkSts Signal is Valid OR not";
+CM_ SG_ 910 ADS_ReqControlBCM "Vehicle Task request.If ADS request control BCM";
+CM_ SG_ 910 HighBeamtON "Open theHigh Beam light";
+CM_ SG_ 910 DippedBeamON "Open the dipped Beam light";
+CM_ SG_ 910 TurnlLightON "Open the Turn light";
+CM_ SG_ 910 EmergencyLightON "Open the emergency light";
+CM_ SG_ 910 FFogLampON "Open the front fog light";
+CM_ SG_ 910 RFogLampON "Open the rear fog ligh";
+CM_ SG_ 910 BrakeLight "Open the brake light";
+CM_ SG_ 910 HornON "Open the horn voice";
+CM_ SG_ 910 Fwindshieldwiper "Open front window shield wiper";
+CM_ SG_ 910 Rwindshieldwiper "Open rear window shield wiper";
+CM_ SG_ 579 LongitudeAcce "Longitude acceleration";
+CM_ SG_ 579 LateralAcce "Indicates Lateral Acceleration";
+CM_ SG_ 579 VehDynYawRate "Vehicle yaw rate";
+CM_ SG_ 579 FLWheelSpd "Front left wheel speed";
+CM_ SG_ 579 FRWheelDirection "Front right wheel  Moving direction";
+CM_ SG_ 576 FLWheelDirection "Front left wheel Moving direction";
+CM_ SG_ 576 FRWheelSpd "Front right wheel speed";
+CM_ SG_ 576 RLWheelDriveDirection "Rear left wheel  Moving direction";
+CM_ SG_ 576 RLWheelSpd "Rear left wheel speed";
+CM_ SG_ 576 RRWheelDirection "Rear right wheel Moving direction";
+CM_ SG_ 576 RRWheelSpd "Rear right wheel speed";
+CM_ SG_ 576 VehicleSpd "Current Vehicle speed information";
+CM_ SG_ 567 EngSpd "Engine speed";
+CM_ SG_ 567 AccPedalPos "Acceleration Pedal Position";
+CM_ SG_ 567 EPBSwtichPosition "EPB Switch position information";
+CM_ SG_ 567 CurrentGear "To indicate which gear the DCT is in now ";
+CM_ SG_ 567 EPS_StreeingMode "Driver Steering Interference Detected";
+CM_ SG_ 567 EPSDrvInputTrqValue "Value of driver input torque";
+CM_ SG_ 567 EPSConsumedCurrValue "Value of consumed current by EPS";
+CM_ SG_ 567 EPSCurrMod "Applied steering mode currently";
+CM_ SG_ 565 SteerWheelAngle "angle of steering wheel ";
+CM_ SG_ 565 SteerWheelSpd "steering wheel rotation speed";
+CM_ SG_ 784 LongitudeAccValid "Longitude acceleration valid";
+CM_ SG_ 784 LateralAcceValid "Indicates Lateral Signal State";
+CM_ SG_ 784 VehDynYawRateValid "Vehicle yaw rate valid";
+CM_ SG_ 784 FLWheelSpdValid "Front right wheel speed valid";
+CM_ SG_ 784 FRWheelSpdValid "Front right wheel speed valid";
+CM_ SG_ 784 RLWheelSpdValid "Rear left wheel speed valid";
+CM_ SG_ 784 RRWheelSpdValid "Rear right wheel speed valid";
+CM_ SG_ 784 VehicleSpdValid "Quality/fault information to current Vehicle speed information";
+CM_ SG_ 784 LongitudeDrivingMode "This signal indicates if ECM control for  ADS torque request is active or not.";
+CM_ SG_ 784 EngSpdValid "Engine speed valid";
+CM_ SG_ 784 AccePedalOverride "Detect Acceleration Pedal Override";
+CM_ SG_ 784 BrakePedalStatus "indicates the brake pedal is pressed or not or incorrect for plausibility check.";
+CM_ SG_ 784 ESPBrakeLightSts "Brake light lamp(on/off),come from ESP";
+CM_ SG_ 784 EPBSwtPositionValid "EPB switch position signal valid";
+CM_ SG_ 784 EPBSts "EPB status";
+CM_ SG_ 784 CurrentGearValid "Current gear valid";
+CM_ SG_ 784 EPSTrqSnsrSts "EPS torque sensor status";
+CM_ SG_ 784 EPS_InterferDetdValid "Driver Steering Interference Detected Validity";
+CM_ SG_ 784 EPSHandsDetnSts "Hands Off Steering Wheel Detection status";
+CM_ SG_ 784 EPS_HandsDetnStsValid "Hands Off Steering Wheel Detection status Validity";
+CM_ SG_ 784 SteerWheelAngleSign "sign of steering wheel angle";
+CM_ SG_ 784 SteerWheelSpdSign "sign of steering wheel speed ";
+CM_ SG_ 784 DriverDoorSts "Driver door status.";
+CM_ SG_ 784 RLDoorSts "Left rear door status";
+CM_ SG_ 784 PassengerDoorSts "Passenger door status.";
+CM_ SG_ 784 RRDoorSts "Right   rear door status";
+CM_ SG_ 784 FrontFogLmpSts "Front fog lamp status";
+CM_ SG_ 784 RearFogLmpSts "Rear fog lamp status";
+CM_ SG_ 784 LowBeamSts "Low beam status";
+CM_ SG_ 784 HighBeamSts "High beam status";
+CM_ SG_ 784 LeftTurnLampSts "Left turn lamp status";
+CM_ SG_ 784 RightTurnLampSts "Right turn lamp status";
+CM_ SG_ 784 BCM_AvailSts "The work status of BCM";
+CM_ SG_ 784 BrakeLmpSts "Break Lamp status";
+CM_ SG_ 577 EngFail "Engine Fail status";
+CM_ SG_ 577 ESPFail "ESP fault";
+CM_ SG_ 577 EPBFail "error indication of EPB system";
+CM_ SG_ 577 ShiftFail "Driver display failure messages";
+CM_ SG_ 577 EPSFail "Electrical steering fail status";
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_  "GenNWMApBusSleep" STRING ;
+BA_DEF_  "GenNWMApCanNormal" STRING ;
+BA_DEF_  "GenNWMApCanOff" STRING ;
+BA_DEF_  "GenNWMApCanOn" STRING ;
+BA_DEF_  "GenNWMApCanSleep" STRING ;
+BA_DEF_  "GenNWMApCanWakeUp" STRING ;
+BA_DEF_  "GenNWMGotoMode_Awake" STRING ;
+BA_DEF_  "GenNWMGotoMode_BusSleep" STRING ;
+BA_DEF_  "GenNWMSleepTime" INT 0 65535;
+BA_DEF_  "GenNWMTalkNM" STRING ;
+BA_DEF_  "NmBaseAddress" HEX 1152 1279;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NmMode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmStationAddress" INT 0 127;
+BA_DEF_ BU_  "GenNodSleepTime" INT 0 1000000;
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BO_  "TpApplType" STRING ;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgMinAcceptLength" INT 0 8;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","CyclicAndSpontanX","Event";
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ EV_  "GenEnvAutoGenCtrl" ENUM  "No","Yes";
+BA_DEF_ EV_  "GenEnvIsGeneratedDsp" ENUM  "No","Yes";
+BA_DEF_ EV_  "GenEnvIsGeneratedSnd" ENUM  "No","Yes";
+BA_DEF_ EV_  "GenEnvMsgName" STRING ;
+BA_DEF_ EV_  "GenEnvMsgOffset" INT 0 2147483647;
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "undef","int","float";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 1215752192;
+BA_DEF_ SG_  "NVM-WakeupAllowed" ENUM  "No","Yes";
+BA_DEF_DEF_  "Manufacturer" "GWM";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "_d";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "_s";
+BA_DEF_DEF_  "GenEnvVarPrefix" "c";
+BA_DEF_DEF_  "GenNWMApBusSleep" "apBusSleep()";
+BA_DEF_DEF_  "GenNWMApCanNormal" "apCanNormal()";
+BA_DEF_DEF_  "GenNWMApCanOff" "apCanOff()";
+BA_DEF_DEF_  "GenNWMApCanOn" "apCanOn()";
+BA_DEF_DEF_  "GenNWMApCanSleep" "apCanSleep()";
+BA_DEF_DEF_  "GenNWMApCanWakeUp" "apCanWakeUp()";
+BA_DEF_DEF_  "GenNWMGotoMode_Awake" "GotoMode_Awake()";
+BA_DEF_DEF_  "GenNWMGotoMode_BusSleep" "GotoMode_BusSleep()";
+BA_DEF_DEF_  "GenNWMSleepTime" 0;
+BA_DEF_DEF_  "GenNWMTalkNM" "TalkNM()";
+BA_DEF_DEF_  "NmBaseAddress" 1152;
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NmMode" "no";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "GenNodSleepTime" 0;
+BA_DEF_DEF_  "NmCAN" 1;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "TpApplType" "";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTime" 10;
+BA_DEF_DEF_  "GenMsgMinAcceptLength" 8;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "GenEnvAutoGenCtrl" "";
+BA_DEF_DEF_  "GenEnvIsGeneratedDsp" "";
+BA_DEF_DEF_  "GenEnvIsGeneratedSnd" "";
+BA_DEF_DEF_  "GenEnvMsgName" "";
+BA_DEF_DEF_  "GenEnvMsgOffset" 0;
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "NVM-WakeupAllowed" "";
+BA_ "DBName" "ADS_CAN";
+BA_ "GenMsgCycleTime" BO_ 273 20;
+BA_ "GenMsgSendType" BO_ 273 0;
+BA_ "GenMsgCycleTime" BO_ 275 20;
+BA_ "GenMsgSendType" BO_ 275 0;
+BA_ "GenMsgCycleTime" BO_ 277 50;
+BA_ "GenMsgSendType" BO_ 277 0;
+BA_ "GenMsgCycleTime" BO_ 910 50;
+BA_ "GenMsgSendType" BO_ 910 0;
+BA_ "GenMsgCycleTime" BO_ 579 20;
+BA_ "GenMsgSendType" BO_ 579 0;
+BA_ "GenMsgCycleTime" BO_ 576 20;
+BA_ "GenMsgSendType" BO_ 576 0;
+BA_ "GenMsgCycleTime" BO_ 567 20;
+BA_ "GenMsgSendType" BO_ 567 0;
+BA_ "GenMsgCycleTime" BO_ 565 20;
+BA_ "GenMsgSendType" BO_ 565 0;
+BA_ "GenMsgCycleTime" BO_ 784 20;
+BA_ "GenMsgSendType" BO_ 784 0;
+BA_ "GenMsgCycleTime" BO_ 577 20;
+BA_ "GenMsgSendType" BO_ 577 0;
+BA_ "GenSigStartValue" SG_ 3221225472 ACC_TARGET_ACCELERATION 1444;
+BA_ "GenSigStartValue" SG_ 611 MIN_TARGET_ACCELERATION 127;
+BA_ "GenSigStartValue" SG_ 611 ACC_TARGET_ACCELERATION 1444;
+BA_ "GenSigStartValue" SG_ 273 ADS_DecToStop 0;
+BA_ "GenSigSendType" SG_ 273 ADS_DecToStop 0;
+BA_ "GenSigStartValue" SG_ 273 ADS_Mode 0;
+BA_ "GenSigSendType" SG_ 273 ADS_Mode 0;
+BA_ "GenSigStartValue" SG_ 273 ADS_TarAcce 0;
+BA_ "GenSigSendType" SG_ 273 ADS_TarAcce 0;
+BA_ "GenSigStartValue" SG_ 273 ADS_Driveoff_Req 0;
+BA_ "GenSigSendType" SG_ 273 ADS_Driveoff_Req 0;
+BA_ "GenSigStartValue" SG_ 273 ADS_AEB_TarAcce 0;
+BA_ "GenSigSendType" SG_ 273 ADS_AEB_TarAcce 0;
+BA_ "GenSigStartValue" SG_ 273 ADS_AEB_TgtDecel_Req 0;
+BA_ "GenSigSendType" SG_ 273 ADS_AEB_TgtDecel_Req 0;
+BA_ "GenSigStartValue" SG_ 275 ADS_EPSMode 0;
+BA_ "GenSigSendType" SG_ 275 ADS_EPSMode 0;
+BA_ "GenSigStartValue" SG_ 275 ADS_ReqEPSTargetAngle 13000;
+BA_ "GenSigSendType" SG_ 275 ADS_ReqEPSTargetAngle 0;
+BA_ "GenSigStartValue" SG_ 277 ADS_ShiftMode 0;
+BA_ "GenSigSendType" SG_ 277 ADS_ShiftMode 0;
+BA_ "GenSigStartValue" SG_ 277 ADS_TargetGear 0;
+BA_ "GenSigSendType" SG_ 277 ADS_TargetGear 0;
+BA_ "GenSigStartValue" SG_ 910 ADS_BCM_WorkSts 0;
+BA_ "GenSigSendType" SG_ 910 ADS_BCM_WorkSts 0;
+BA_ "GenSigStartValue" SG_ 910 ADS_BCMWorkStsValid 0;
+BA_ "GenSigSendType" SG_ 910 ADS_BCMWorkStsValid 0;
+BA_ "GenSigStartValue" SG_ 910 ADS_ReqControlBCM 0;
+BA_ "GenSigSendType" SG_ 910 ADS_ReqControlBCM 0;
+BA_ "GenSigStartValue" SG_ 910 HighBeamtON 0;
+BA_ "GenSigSendType" SG_ 910 HighBeamtON 0;
+BA_ "GenSigStartValue" SG_ 910 DippedBeamON 0;
+BA_ "GenSigSendType" SG_ 910 DippedBeamON 0;
+BA_ "GenSigStartValue" SG_ 910 TurnlLightON 0;
+BA_ "GenSigSendType" SG_ 910 TurnlLightON 0;
+BA_ "GenSigStartValue" SG_ 910 EmergencyLightON 0;
+BA_ "GenSigSendType" SG_ 910 EmergencyLightON 0;
+BA_ "GenSigStartValue" SG_ 910 FFogLampON 0;
+BA_ "GenSigSendType" SG_ 910 FFogLampON 0;
+BA_ "GenSigStartValue" SG_ 910 RFogLampON 0;
+BA_ "GenSigSendType" SG_ 910 RFogLampON 0;
+BA_ "GenSigStartValue" SG_ 910 BrakeLight 0;
+BA_ "GenSigSendType" SG_ 910 BrakeLight 0;
+BA_ "GenSigStartValue" SG_ 910 HornON 0;
+BA_ "GenSigSendType" SG_ 910 HornON 0;
+BA_ "GenSigStartValue" SG_ 910 Fwindshieldwiper 0;
+BA_ "GenSigSendType" SG_ 910 Fwindshieldwiper 0;
+BA_ "GenSigStartValue" SG_ 910 Rwindshieldwiper 0;
+BA_ "GenSigSendType" SG_ 910 Rwindshieldwiper 0;
+BA_ "GenSigStartValue" SG_ 579 LongitudeAcce 0;
+BA_ "GenSigSendType" SG_ 579 LongitudeAcce 0;
+BA_ "GenSigStartValue" SG_ 579 LateralAcce 0;
+BA_ "GenSigSendType" SG_ 579 LateralAcce 0;
+BA_ "GenSigStartValue" SG_ 579 VehDynYawRate 0;
+BA_ "GenSigSendType" SG_ 579 VehDynYawRate 0;
+BA_ "GenSigStartValue" SG_ 579 FLWheelSpd 0;
+BA_ "GenSigSendType" SG_ 579 FLWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 579 FRWheelDirection 0;
+BA_ "GenSigSendType" SG_ 579 FRWheelDirection 0;
+BA_ "GenSigStartValue" SG_ 576 FLWheelDirection 0;
+BA_ "GenSigSendType" SG_ 576 FLWheelDirection 0;
+BA_ "GenSigStartValue" SG_ 576 FRWheelSpd 0;
+BA_ "GenSigSendType" SG_ 576 FRWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 576 RLWheelDriveDirection 0;
+BA_ "GenSigSendType" SG_ 576 RLWheelDriveDirection 0;
+BA_ "GenSigStartValue" SG_ 576 RLWheelSpd 0;
+BA_ "GenSigSendType" SG_ 576 RLWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 576 RRWheelDirection 0;
+BA_ "GenSigSendType" SG_ 576 RRWheelDirection 0;
+BA_ "GenSigStartValue" SG_ 576 RRWheelSpd 0;
+BA_ "GenSigSendType" SG_ 576 RRWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 576 VehicleSpd 0;
+BA_ "GenSigSendType" SG_ 576 VehicleSpd 0;
+BA_ "GenSigStartValue" SG_ 567 EngSpd 0;
+BA_ "GenSigSendType" SG_ 567 EngSpd 0;
+BA_ "GenSigStartValue" SG_ 567 AccPedalPos 0;
+BA_ "GenSigSendType" SG_ 567 AccPedalPos 0;
+BA_ "GenSigStartValue" SG_ 567 EPBSwtichPosition 0;
+BA_ "GenSigSendType" SG_ 567 EPBSwtichPosition 0;
+BA_ "GenSigStartValue" SG_ 567 CurrentGear 0;
+BA_ "GenSigSendType" SG_ 567 CurrentGear 0;
+BA_ "GenSigStartValue" SG_ 567 EPS_StreeingMode 0;
+BA_ "GenSigSendType" SG_ 567 EPS_StreeingMode 0;
+BA_ "GenSigStartValue" SG_ 567 EPSDrvInputTrqValue 0;
+BA_ "GenSigSendType" SG_ 567 EPSDrvInputTrqValue 0;
+BA_ "GenSigStartValue" SG_ 567 EPSConsumedCurrValue 0;
+BA_ "GenSigSendType" SG_ 567 EPSConsumedCurrValue 0;
+BA_ "GenSigStartValue" SG_ 567 EPSCurrMod 4;
+BA_ "GenSigSendType" SG_ 567 EPSCurrMod 0;
+BA_ "GenSigStartValue" SG_ 565 SteerWheelAngle 0;
+BA_ "GenSigSendType" SG_ 565 SteerWheelAngle 0;
+BA_ "GenSigStartValue" SG_ 565 SteerWheelSpd 0;
+BA_ "GenSigSendType" SG_ 565 SteerWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 784 LongitudeAccValid 0;
+BA_ "GenSigSendType" SG_ 784 LongitudeAccValid 0;
+BA_ "GenSigStartValue" SG_ 784 LateralAcceValid 0;
+BA_ "GenSigSendType" SG_ 784 LateralAcceValid 0;
+BA_ "GenSigStartValue" SG_ 784 VehDynYawRateValid 0;
+BA_ "GenSigSendType" SG_ 784 VehDynYawRateValid 0;
+BA_ "GenSigStartValue" SG_ 784 FLWheelSpdValid 0;
+BA_ "GenSigSendType" SG_ 784 FLWheelSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 FRWheelSpdValid 0;
+BA_ "GenSigSendType" SG_ 784 FRWheelSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 RLWheelSpdValid 0;
+BA_ "GenSigSendType" SG_ 784 RLWheelSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 RRWheelSpdValid 0;
+BA_ "GenSigSendType" SG_ 784 RRWheelSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 VehicleSpdValid 0;
+BA_ "GenSigSendType" SG_ 784 VehicleSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 LongitudeDrivingMode 0;
+BA_ "GenSigSendType" SG_ 784 LongitudeDrivingMode 0;
+BA_ "GenSigStartValue" SG_ 784 EngSpdValid 2;
+BA_ "GenSigSendType" SG_ 784 EngSpdValid 0;
+BA_ "GenSigStartValue" SG_ 784 AccePedalOverride 0;
+BA_ "GenSigSendType" SG_ 784 AccePedalOverride 0;
+BA_ "GenSigStartValue" SG_ 784 BrakePedalStatus 0;
+BA_ "GenSigSendType" SG_ 784 BrakePedalStatus 0;
+BA_ "GenSigStartValue" SG_ 784 ESPBrakeLightSts 0;
+BA_ "GenSigSendType" SG_ 784 ESPBrakeLightSts 0;
+BA_ "GenSigStartValue" SG_ 784 EPBSwtPositionValid 0;
+BA_ "GenSigSendType" SG_ 784 EPBSwtPositionValid 0;
+BA_ "GenSigStartValue" SG_ 784 EPBSts 0;
+BA_ "GenSigSendType" SG_ 784 EPBSts 0;
+BA_ "GenSigStartValue" SG_ 784 CurrentGearValid 0;
+BA_ "GenSigSendType" SG_ 784 CurrentGearValid 0;
+BA_ "GenSigStartValue" SG_ 784 EPSTrqSnsrSts 1;
+BA_ "GenSigSendType" SG_ 784 EPSTrqSnsrSts 0;
+BA_ "GenSigStartValue" SG_ 784 EPS_InterferDetdValid 0;
+BA_ "GenSigSendType" SG_ 784 EPS_InterferDetdValid 0;
+BA_ "GenSigStartValue" SG_ 784 EPSHandsDetnSts 0;
+BA_ "GenSigSendType" SG_ 784 EPSHandsDetnSts 0;
+BA_ "GenSigStartValue" SG_ 784 EPS_HandsDetnStsValid 1;
+BA_ "GenSigSendType" SG_ 784 EPS_HandsDetnStsValid 0;
+BA_ "GenSigStartValue" SG_ 784 SteerWheelAngleSign 0;
+BA_ "GenSigSendType" SG_ 784 SteerWheelAngleSign 0;
+BA_ "GenSigStartValue" SG_ 784 SteerWheelSpdSign 0;
+BA_ "GenSigSendType" SG_ 784 SteerWheelSpdSign 0;
+BA_ "GenSigStartValue" SG_ 784 DriverDoorSts 0;
+BA_ "GenSigSendType" SG_ 784 DriverDoorSts 0;
+BA_ "GenSigStartValue" SG_ 784 RLDoorSts 0;
+BA_ "GenSigSendType" SG_ 784 RLDoorSts 0;
+BA_ "GenSigStartValue" SG_ 784 PassengerDoorSts 0;
+BA_ "GenSigSendType" SG_ 784 PassengerDoorSts 0;
+BA_ "GenSigStartValue" SG_ 784 RRDoorSts 0;
+BA_ "GenSigSendType" SG_ 784 RRDoorSts 0;
+BA_ "GenSigStartValue" SG_ 784 FrontFogLmpSts 0;
+BA_ "GenSigSendType" SG_ 784 FrontFogLmpSts 0;
+BA_ "GenSigStartValue" SG_ 784 RearFogLmpSts 0;
+BA_ "GenSigSendType" SG_ 784 RearFogLmpSts 0;
+BA_ "GenSigStartValue" SG_ 784 LowBeamSts 0;
+BA_ "GenSigSendType" SG_ 784 LowBeamSts 0;
+BA_ "GenSigStartValue" SG_ 784 HighBeamSts 0;
+BA_ "GenSigSendType" SG_ 784 HighBeamSts 0;
+BA_ "GenSigStartValue" SG_ 784 LeftTurnLampSts 0;
+BA_ "GenSigSendType" SG_ 784 LeftTurnLampSts 0;
+BA_ "GenSigStartValue" SG_ 784 RightTurnLampSts 0;
+BA_ "GenSigSendType" SG_ 784 RightTurnLampSts 0;
+BA_ "GenSigStartValue" SG_ 784 BCM_AvailSts 0;
+BA_ "GenSigSendType" SG_ 784 BCM_AvailSts 0;
+BA_ "GenSigStartValue" SG_ 784 BrakeLmpSts 0;
+BA_ "GenSigSendType" SG_ 784 BrakeLmpSts 0;
+BA_ "GenSigStartValue" SG_ 577 EngFail 0;
+BA_ "GenSigSendType" SG_ 577 EngFail 0;
+BA_ "GenSigStartValue" SG_ 577 ESPFail 0;
+BA_ "GenSigSendType" SG_ 577 ESPFail 0;
+BA_ "GenSigStartValue" SG_ 577 EPBFail 0;
+BA_ "GenSigSendType" SG_ 577 EPBFail 0;
+BA_ "GenSigStartValue" SG_ 577 ShiftFail 0;
+BA_ "GenSigSendType" SG_ 577 ShiftFail 0;
+BA_ "GenSigStartValue" SG_ 577 EPSFail 0;
+BA_ "GenSigSendType" SG_ 577 EPSFail 0;
+VAL_ 912 Req_VIN_Signal 1 "Request" 0 "No Request" ;
+VAL_ 273 ADS_DecToStop 0 " No demand " 1 " demand " ;
+VAL_ 273 ADS_Mode 0 " OFF mode " 3 " Active mode " ;
+VAL_ 273 ADS_Driveoff_Req 0 " No demand " 1 " demand " ;
+VAL_ 273 ADS_AEB_TgtDecel_Req 0 " No demand " 1 " Demand " ;
+VAL_ 275 ADS_EPSMode 0 " Disable " 2 " Active  " ;
+VAL_ 277 ADS_ShiftMode 0 " Invalid " 1 " Valid " ;
+VAL_ 277 ADS_TargetGear 0 "N" 1 "R      " 2 "P                  " 3 "D" ;
+VAL_ 910 ADS_BCM_WorkSts 0 " Disable " 1 " Enable " 2 " Active " 3 " Failed " ;
+VAL_ 910 ADS_BCMWorkStsValid 0 " Invalid " 1 " Valid " ;
+VAL_ 910 ADS_ReqControlBCM 0 " No Request " 1 " Request " ;
+VAL_ 910 HighBeamtON 0 " Turn OFF " 1 " Turn  ON " ;
+VAL_ 910 DippedBeamON 0 " Turn  OFF " 1 " Turn  ON " ;
+VAL_ 910 TurnlLightON 0 " Turn OFF " 1 " Turn Left ON " 2 " Turn Right ON " 3 " reserved " ;
+VAL_ 910 EmergencyLightON 0 " Turn OFF " 1 " Turn ON " ;
+VAL_ 910 FFogLampON 0 " Turn OFF " 1 " Turn ON " ;
+VAL_ 910 RFogLampON 0 " Turn OFF " 1 " Turn  ON " ;
+VAL_ 910 BrakeLight 0 " Turn OFF " 1 " Turn ON " ;
+VAL_ 910 HornON 0 " Turn OFF " 1 " Turn ON " ;
+VAL_ 910 Fwindshieldwiper 0 " Turn OFF " 1 " Turn  ON " ;
+VAL_ 910 Rwindshieldwiper 0 " Turn  OFF " 1 " Turn  ON " ;
+VAL_ 579 FRWheelDirection 0 " Invalid " 1 " Forward " 2 " Backward " 3 " Stop " ;
+VAL_ 576 FLWheelDirection 0 " Invalid " 1 " Forward " 2 " Backward " 3 " Stop " ;
+VAL_ 576 RLWheelDriveDirection 0 " Invalid " 1 " Forward " 2 " Backward " 3 " Stop " ;
+VAL_ 576 RRWheelDirection 0 " Invalid " 1 " Forward " 2 " Backward " 3 " Stop " ;
+VAL_ 567 EPBSwtichPosition 0 " Neutral " 1 " Release " 2 " Apply " 3 " Reserved1 " ;
+VAL_ 567 CurrentGear 0 "P" 1 "R" 2 "N" 3 "D" ;
+VAL_ 567 EPS_StreeingMode 7 "Reserved3" 6 "Reserved2" 5 "Reserved1" 4 "temporary inhibited" 3 "Manual(From EPS Failed Detected)" 2 "Manual(From Drvnterference ) " 0 "Manual" 1 "Automatic  avail" ;
+VAL_ 567 EPSCurrMod 0 " Normal Mode " 1 " Sport Mode " 2 " Comfort Mode " 3 " ModeSelectionNotPossible " 4 " No Display " 5 " ConditionNotMeet " 6 " Reserved1 " ;
+VAL_ 784 LongitudeAccValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 LateralAcceValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 VehDynYawRateValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 FLWheelSpdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 FRWheelSpdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 RLWheelSpdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 RRWheelSpdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 VehicleSpdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 LongitudeDrivingMode 3 "AutomaticDeceleration" 2 "AutomaticAcceleration" 0 "ManualMode" 1 "AutomaticStandby" ;
+VAL_ 784 EngSpdValid 0 " Invalid " 1 " Valid " 2 " Init value " 3 " Reserved " ;
+VAL_ 784 AccePedalOverride 0 " not override " 1 " override " ;
+VAL_ 784 BrakePedalStatus 0 " Not pressed " 1 " Pressed " 2 " Reserved1 " 3 " Error " ;
+VAL_ 784 ESPBrakeLightSts 0 " off " 1 " on " ;
+VAL_ 784 EPBSwtPositionValid 1 " Not valid " 0 " Valid " ;
+VAL_ 784 EPBSts 0 " Released " 1 " Closed " 2 " In progress " 3 " unknown " ;
+VAL_ 784 CurrentGearValid 0 " Invalid  " 1 " Valid " ;
+VAL_ 784 EPSTrqSnsrSts 0 " Normal " 1 " Abnormal " ;
+VAL_ 784 EPS_InterferDetdValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 EPSHandsDetnSts 0 " Handsoff not detected " 1 " Handofff detected " ;
+VAL_ 784 EPS_HandsDetnStsValid 0 " Invalid " 1 " Valid " ;
+VAL_ 784 SteerWheelAngleSign 0 " Left (Positive) " 1 " Right (Negative) " ;
+VAL_ 784 SteerWheelSpdSign 0 " Left (Positive) " 1 " Right (Negative) " ;
+VAL_ 784 DriverDoorSts 0 " Closed " 1 " Open " ;
+VAL_ 784 RLDoorSts 0 " Closed " 1 " Open " ;
+VAL_ 784 PassengerDoorSts 0 " Closed " 1 " Open " ;
+VAL_ 784 RRDoorSts 0 " Closed " 1 " Open " ;
+VAL_ 784 FrontFogLmpSts 0 " Off " 1 " On " 2 " Reserved " 3 " Not available " ;
+VAL_ 784 RearFogLmpSts 0 " Off " 1 " On " ;
+VAL_ 784 LowBeamSts 0 " Off " 1 " On " ;
+VAL_ 784 HighBeamSts 0 " Off " 1 " On " ;
+VAL_ 784 LeftTurnLampSts 0 " Off " 1 " On " ;
+VAL_ 784 RightTurnLampSts 0 " Off " 1 " On " ;
+VAL_ 784 BCM_AvailSts 0 " Manual Mode " 1 " Autonomous Mode " 2 " reserved1 " 3 " reserved2 " ;
+VAL_ 784 BrakeLmpSts 0 " Off " 1 " On " ;
+VAL_ 577 EngFail 0 " No Fail " 1 " Fail " ;
+VAL_ 577 ESPFail 0 " No failure " 1 " Failure " ;
+VAL_ 577 EPBFail 0 " Undefined " 1 " No Error " 2 " Error " 3 " Diagnosis " ;
+VAL_ 577 ShiftFail 0 "No Fail" 1 " Transmission Malfunction" 2 " Transmission P engagement fault " 3 " Transmission P disengagement fault " 4 " Reserved" 15 " transmission limit function " ;
+VAL_ 577 EPSFail 0 " No fault " 1 " Fault " ;
